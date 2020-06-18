@@ -3,7 +3,6 @@ class ProductsController < ApplicationController
   end
 
   def add
-    session[:cart] << params[:product]
-
+    cart << params[:product]
   end
 end
