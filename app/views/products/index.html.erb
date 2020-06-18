@@ -3,4 +3,6 @@
 <%= submit_tag %>
 <% end %>
 
-<%= cart %>
+<% cart.each do |item| %>
+<%= item %>
+<% end %>
