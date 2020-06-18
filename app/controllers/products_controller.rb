@@ -4,6 +4,6 @@ class ProductsController < ApplicationController
   end
 
   def add
-    raise params.inspect
+    session[:cart] << params[:product]
   end
 end
